@@ -24,9 +24,11 @@ public class SavingsAccount extends Banking {
      */
     public void withdraw(double w){
         // Determine if account is active or inactive
-        if(getBalance() < 25.00)
+        if(getBalance() < 25.00){
             status = false;
-        
+            System.out.println("No withdrawals can be made at this time.");
+        }
+                
         // If account is active, make the withdrawal
         if(status) super.withdraw(w);
     }
@@ -42,6 +44,14 @@ public class SavingsAccount extends Banking {
             status = true;
         
         super.deposit(d);
+    }
+    
+    /**
+     * getStatus method
+     * @return The status of the account
+     */
+    public boolean getStatus(){
+        return status;
     }
     
     /**
