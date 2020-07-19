@@ -51,6 +51,14 @@ public abstract class Banking {
     }
     
     /**
+     * getWithdrawals method
+     * @return Number of withdrawals
+     */
+    public int getWithdrawals(){
+        return withdrawals;
+    }
+    
+    /**
      * calcInterest method calculates the monthly interest and adds it to
      * the balance
      */
