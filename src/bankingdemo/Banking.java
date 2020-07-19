@@ -43,6 +43,14 @@ public abstract class Banking {
     }
     
     /**
+     * getBalance method
+     * @return The amount in the balance variable
+     */
+    public double getBalance(){
+        return balance;
+    }
+    
+    /**
      * calcInterest method calculates the monthly interest and adds it to
      * the balance
      */
