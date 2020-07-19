@@ -43,6 +43,14 @@ public abstract class Banking {
     }
     
     /**
+     * setServiceCharges method
+     * @param s The amount the of the charges
+     */
+    public void setServiceCharges(double s){
+        serviceCharges = s;
+    }
+    
+    /**
      * getBalance method
      * @return The amount in the balance variable
      */
